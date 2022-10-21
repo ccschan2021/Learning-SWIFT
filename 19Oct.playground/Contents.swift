@@ -23,7 +23,7 @@ while (((rand[0] != res[0]) || (rand[1] != res[1]) || (rand[2] != res[2]) || (ra
 
 var res = [6, 11, 14, 17]
 var rand = [Int]()
-var run = 0
+var run2 = 0
 
 repeat {
     repeat {
@@ -34,7 +34,7 @@ repeat {
         rand.sort()
     }
     while ((rand[0] == rand[1]) || (rand[1] == rand[2]) || (rand[2] == rand[3]))
-    run += 1
+    run2 += 1
     print("Run: \(run) \(rand[0]) \(rand[1]) \(rand[2]) \(rand[3])")
 }
 while (((rand[0] != res[0]) || (rand[1] != res[1]) || (rand[2] != res[2]) || (rand[3] != res[3])) && (run < 50000))
