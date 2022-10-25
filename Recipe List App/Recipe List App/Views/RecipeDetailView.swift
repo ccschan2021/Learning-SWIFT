@@ -24,8 +24,10 @@ struct RecipeDetailView: View {
                         .font(.headline)
                         .padding([.bottom, .top], 5)
                     
-                    ForEach (recipe.ingredients, id: \.self) { item in
-                        Text("· "+item)
+                    // No longer need "id: \.self" as ingredient is now an identifiable object
+                    //  ForEach (recipe.ingredients, id: \.self) { item in
+                    ForEach (recipe.ingredients) { item in
+                        Text("· "+item.name)
                         //.padding(.bottom, 2)
                     }
                 // MARK: Divider
