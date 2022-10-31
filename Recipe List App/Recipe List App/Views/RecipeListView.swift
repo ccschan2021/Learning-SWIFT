@@ -39,6 +39,7 @@ struct RecipeListView: View {
                     }
                 }
             }
+            // Hide NavigationBarTitle by removing .navigationBarTitle modifier and adding .navigationBarHidden modifier
             .navigationBarHidden(true)
             .padding(.leading)
         }
